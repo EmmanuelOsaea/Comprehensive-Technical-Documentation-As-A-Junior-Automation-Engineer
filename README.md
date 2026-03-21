@@ -13,7 +13,7 @@ A test passes on your local machine but fails randomly in the CI pipeline. What 
 
 # Problem 5: Script Throws Exception
 Your test script throws a NullPointerException when trying to access a web element. What could be the cause and how do you resolve it?
-
+.
 
 # Solution 1: Locator Not Found
 
