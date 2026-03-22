@@ -24,3 +24,4 @@ Research on what often causes "403 forbidden error" then identify it inorder to 
 # Solution 4: Flaky Test in CI
 Research on what causes test to pass on my local machine but fail in my ci pipeline and make corrections needed. 
 # Solution 5: Script Throws Exception
+Research on what "NullPointerException" means then identify what causes it to appear when attempting to access a web element.
