@@ -13,14 +13,14 @@ A test passes on your local machine but fails randomly in the CI pipeline. What 
 
 # Problem 5: Script Throws Exception
 Your test script throws a NullPointerException when trying to access a web element. What could be the cause and how do you resolve it?
-.
+
 
 # Solution 1: Locator Not Found
-
+Locate the button id test script and change it from loginBtn to LoginBtn
 # Solution 2: Test Timeout
-
+Research on how it can stay stable and prevent it from loading further than needed.
 # Solution 3: API Test Unauthorized
-
+Research on what often causes "403 forbidden error" then identify it inorder to solve it quickly. 
 # Solution 4: Flaky Test in CI
-
+Research on what causes test to pass on my local machine but fail in my ci pipeline and make corrections needed. 
 # Solution 5: Script Throws Exception
