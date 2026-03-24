@@ -67,7 +67,7 @@ Research on what "NullPointerException" means then identify what causes it to ap
 </project>
 
 
-
+.
 
 # 3. Java + Appium Test Script Example
 
