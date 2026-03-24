@@ -32,16 +32,30 @@ Research on what "NullPointerException" means then identify what causes it to ap
 # * Maven or Gradle for dependency management(Gradle example here)
 # * Appium server installed and running
 # * Android Emulator or real device connected
-# * Android Finance tracker app
+# * Android Demo Quiz app
 
-# 2. Maven pom.xml Dependencies (for Java + Appium)
-<project xmlns = " " ...>
-<modelVersion>    </modelVersion>
-<groupId> </groupId>
-<artifactId>appium-demo</artifactId>
-<version> </version>
+# 2. Gradle Dependencies (for Java + Appium)
+// build.gradle (Groovy DSL)
+plugins {
+id 'java'
+}
 
-<dependencies> 
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+mavenCentral()
+}
+
+dependencies {
+implementation 'io.appium:java-client: '
+testImplementation 'org.testng:testng: '
+}
+
+
+
+
+
 <!-- Appium Java client -->
 <dependency>
 <groupId>io.appium</groupId>
