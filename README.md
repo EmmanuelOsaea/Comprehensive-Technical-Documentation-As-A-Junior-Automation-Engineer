@@ -35,7 +35,7 @@ Research on what "NullPointerException" means then identify what causes it to ap
 # * Android Demo Quiz app
 
 # 2. Gradle Dependencies (for Java + Appium)
-// build.gradle (Groovy DSL)
+```// build.gradle (Groovy DSL)
 plugins {
 id 'java'
 }
@@ -48,41 +48,19 @@ mavenCentral()
 }
 
 dependencies {
+// Appium Java client
 implementation 'io.appium:java-client: 10.1.0'
+// Selenium WebDriver
+implementation org.seleniumhq.selenium.selenium-java:4.41.0
+
+// Testng for test Framework
 testImplementation 'org.testng:testng: 7.12.0'
 }
 
-
-
-
-
-<!-- Appium Java client -->
-<dependency>
-<groupId>io.appium</groupId>
-<artifactId>java-client</artifactId>
-<version> </version>
-</dependency>
-
-<!-- Selenium WebDriver (Appium depends on it) -->
-<dependency>
-<groupId> </groupId>
-<artifactId> </artifactId>
-<version> </version>
-</dependency>
-  
-<!-- TestNG for test framework -->
-<dependency>
-<groupId>org.testng</groupId>
-<artifactId>testng</artifactId>
-<version> </version>
-<scope>test</scope> 
-</dependency>
-</dependencies>
-</project>
-
-
-.
-
+test {
+useTestNG()
+}
+```
 # 3. Java + Appium Test Script Example
 
 
