@@ -25,3 +25,55 @@ Research on what often causes "403 forbidden error" then identify it inorder to 
 Research on what causes test to pass on my local machine but fail in my ci pipeline and make corrections needed. 
 # Solution 5: Script Throws Exception
 Research on what "NullPointerException" means then identify what causes it to appear when attempting to access a web element.
+
+# Practical Example: Java + Appium Basic Mobile Automation Test
+# 1. Prerequisites
+# * Java JDK installed
+# * Maven or Gradle for dependency management(Gradle example here)
+# * Appium server installed and running
+# * Android Emulator or real device connected
+# * Android Finance tracker app
+
+# 2. Maven pom.xml Dependencies (for Java + Appium)
+<project xmlns = " " ...>
+<modelVersion>    </modelVersion>
+<groupId> </groupId>
+<artifactId>appium-demo</artifactId>
+<version> </version>
+
+<dependencies> 
+<!-- Appium Java client -->
+<dependency>
+<groupId>io.appium</groupId>
+<artifactId>java-client</artifactId>
+<version> </version>
+</dependency>
+
+<!-- Selenium WebDriver (Appium depends on it) -->
+<dependency>
+<groupId> </groupId>
+<artifactId> </artifactId>
+<version> </version>
+</dependency>
+  
+<!-- TestNG for test framework -->
+<dependency>
+<groupId>org.testng</groupId>
+<artifactId>testng</artifactId>
+<version> </version>
+<scope>test</scope> 
+</dependency>
+</dependencies>
+</project>
+
+
+
+
+# 3. Java + Appium Test Script Example
+
+
+
+
+# 4. Explanation of the Example
+# Java Concept Demonstrated: 
+
