@@ -48,8 +48,8 @@ mavenCentral()
 }
 
 dependencies {
-implementation 'io.appium:java-client: '
-testImplementation 'org.testng:testng: '
+implementation 'io.appium:java-client: 10.1.0'
+testImplementation 'org.testng:testng: 7.12.0'
 }
 
 
