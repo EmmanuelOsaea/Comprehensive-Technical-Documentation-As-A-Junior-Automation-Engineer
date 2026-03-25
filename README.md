@@ -28,11 +28,11 @@ Research on what "NullPointerException" means then identify what causes it to ap
 
 # Practical Example: Java + Appium Basic Mobile Automation Test
 # 1. Prerequisites
-# * Java JDK installed
-# * Maven or Gradle for dependency management(Gradle example here)
-# * Appium server installed and running
-# * Android Emulator or real device connected
-# * Android Demo Quiz app
+#  * Java JDK installed
+#  * Maven or Gradle for dependency management(Gradle example here)
+#  * Appium server installed and running
+#  * Android Emulator or real device connected
+#  * Android Demo Quiz app
 
 # 2. Gradle Dependencies (for Java + Appium)
 ```// build.gradle (Groovy DSL)
