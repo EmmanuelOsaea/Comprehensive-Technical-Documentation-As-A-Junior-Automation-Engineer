@@ -88,7 +88,7 @@ UiAutomator 2Options optiom = new UiAutomator2Options;
 driver = new AndroidDriver (new URL("http 127.0.0.1.4723"),options);
 driver.manage().timeouts().implicitlyWait(Duration.OfSeconds(7));
 
-
+.
 
 @Test
 public void testQuizFlow(){
