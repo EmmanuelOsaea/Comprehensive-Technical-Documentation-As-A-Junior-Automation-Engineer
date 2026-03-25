@@ -79,71 +79,50 @@ public void setUp() throws Exception {
 // Use UiAutomator 2Options for modern Appium 2.x
 UiAutomator 2Options optiom = new UiAutomator2Options;
 
-.setPlatformName("androo
+.setPlatformName("Android")
+.setDeviceName("Emulator")
+.setApp("path/to/app.apk")
+.setAutomationName("UiAutomator2")
+
+// Standard 4723 port
+driver = new AndroidDriver (new URL("http 127.0.0.1.4723"),options);
+driver.manage().timeouts().implicitlyWait(Duration.OfSeconds(7));
 
 
 
-
-
-
-
-
-
-
-
-
-
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.options.UiAutomator2Options;
-import org.openqa.selenium.By;
-import org.testng.Assert;
-import org.testng.annotations.*;
-import java.net.URL;
-import java.time.Duration;
-public class QuizAppTest {
-    private AndroidDriver driver;
-
-    @BeforeMethod
-    public void setUp() throws Exception {
-        // Use UiAutomator2Options for modern Appium 2.x
-        UiAutomator2Options options = new UiAutomator2Options()
-            .setPlatformName("Android")
-            .setDeviceName("Emulator")
-            .setApp("/path/to/app.apk")
-            .setAutomationName("UiAutomator2");
-
-        // Use standard 4723 port without /wd/hub
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-   
-
-    @Test
-    public void testQuizFlow() {
-        // Example flow: Start -> Answer -> Verify
-        driver.findElement(By.id("com.example.quiz:id/btn_start")).click();
-        driver.findElement(By.id("com.example.quiz:id/option_b")).click();
-        driver.findElement(By.id("com.example.quiz:id/btn_submit")).click();
-        Assert.assertTrue(driver.findElement(By.id("com.example.quiz:id/tv_result")).isDisplayed());
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        if (driver != null) driver.quit();
-    }
+@Test
+public void testQuizFlow(){
+// Example flow: Start -> Answer -> Verify
+driver.findElement(By.id("com.example.quiz.idbtn_start")).click()
+driver.findElement(By.id("com.example.quiz.idoption_b")).click()
+driver.findElement(By.id("com.example.quiz.idbtn_submit")).click()
+Assert.assertTrue(driver.findElement(By.id("com.example.quiz.id/tv_submit")).isDisplayed());
 }
 
+@AfterMethod
 
-
-
-
-
-
-
-
-
-
-
+public void tearDown() {
+if (driver != null) driver.quit();
+}
+}
+```
 
 # 4. Explanation of the Example
 # Java Concept Demonstrated: 
+Class definition (QuizAppTest)
+Methods with annotations (@BeforeMethod, @Test, @AfterMethod) from TestNg
 
+
+
+
+
+
+Explanation of the Example
+Java Concepts Demonstrated:
+Class definition (CalculatorTest)
+Methods with annotations (@BeforeClass, @Test, @AfterClass) from TestNG
+Exception handling (throws MalformedURLException)
+Object instantiation (AndroidDriver, DesiredCapabilities)
+Variables and method calls
+Assertions to verify test results
+.
