@@ -88,7 +88,7 @@ UiAutomator 2Options optiom = new UiAutomator2Options;
 driver = new AndroidDriver (new URL("http 127.0.0.1.4723"),options);
 driver.manage().timeouts().implicitlyWait(Duration.OfSeconds(7));
 
-.
+
 
 @Test
 public void testQuizFlow(){
@@ -115,5 +115,10 @@ Object Instantiation (Android Driver)
 Variables and method Calls 
 Assertions to verify results
 
-
-
+# 5. Testing Types I Recommended for The Demo App I Built Using Ai from Scratch
+ # Functional Testing 
+   Submit Button records scores✓
+# Regression Testing
+   Adding the timer did not break the score✓
+# Smoke testing
+   App Opens✓
