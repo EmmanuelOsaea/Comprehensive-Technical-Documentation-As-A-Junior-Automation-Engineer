@@ -122,3 +122,8 @@ Assertions to verify results
    Adding the timer did not break the score✓
 # Smoke testing
    App Opens✓
+
+
+# App link below
+
+https://github.com/EmmanuelOsaea/Quiz-app-Front-end-Web-design-
