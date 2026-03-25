@@ -111,18 +111,9 @@ if (driver != null) driver.quit();
 # Java Concept Demonstrated: 
 Class definition (QuizAppTest)
 Methods with annotations (@BeforeMethod, @Test, @AfterMethod) from TestNg
+Object Instantiation (Android Driver)
+Variables and method Calls 
+Assertions to verify results
 
 
 
-
-
-
-Explanation of the Example
-Java Concepts Demonstrated:
-Class definition (CalculatorTest)
-Methods with annotations (@BeforeClass, @Test, @AfterClass) from TestNG
-Exception handling (throws MalformedURLException)
-Object instantiation (AndroidDriver, DesiredCapabilities)
-Variables and method calls
-Assertions to verify test results
-.
